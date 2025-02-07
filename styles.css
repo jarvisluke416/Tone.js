@@ -1,0 +1,1733 @@
+.piano {
+    position: relative;
+    left: 125px;
+    display: flex;
+    flex-direction: row;
+  }
+  .A1 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .A1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .A1:hover {
+    background-color: #bbb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .ASBF1 {
+    position: absolute;
+    left: 18px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .ASBF1:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B1 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B1:active {
+    background-color: lightgray; 
+    transform: translateY(4px);  
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }
+  .B1:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px); 
+  }
+  .C1 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .C1:active {
+    background-color: lightgray; 
+    transform: translateY(4px);  
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }
+  .C1:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .CSDF1 {
+    position: absolute;
+    left: 68px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .D1 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .D1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .D1:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px); 
+  }
+  .DSEF1 {
+    position: absolute;
+    left: 93px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .DSEF1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .DSEF1:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .E1 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .E1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .E1:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .F1 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .F1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .F1:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .FSGF1 {
+    position: absolute;
+    left: 143px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .FSGF1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .FSGF1:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .G1 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .G1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .G1:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .GSAF1 {
+    position: absolute;
+    left: 168px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .GSAF1:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .GSAF1:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .A2 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .A2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .A2:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .ASBF2 {
+    position: absolute;
+    left: 193px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .ASBF2:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B2 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .B2:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .C2 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .C2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .C2:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .CSDF2 {
+    position: absolute;
+    left: 243px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;  
+  }
+  .CSDF2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .CSDF2:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .D2 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .D2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .D2:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .DSEF2 {
+    position: absolute;
+    left: 268px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .DSEF2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .DSEF2:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .E2 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .E2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .E2:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .F2 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .F2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .F2:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .FSGF2 {
+    position: absolute;
+    left: 318px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .FSGF2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .FSGF2:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .G2 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .G2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .G2:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .GSAF2 {
+    position: absolute;
+    left: 343px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .GSAF2:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .GSAF2:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .A3 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .A3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .A3:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .ASBF3 {
+    position: absolute;
+    left: 368px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .ASBF3:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B3 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .B3:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .C3 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .C3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .C3:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .CSDF3 {
+    position: absolute;
+    left: 418px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .CSDF3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .CSDF3:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .D3 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .D3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .D3:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .DSEF3 {
+    position: absolute;
+    left: 443px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .DSEF3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .DSEF3:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .E3 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .E3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .E3:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .F3 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .F3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .F3:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .FSGF3 {
+    position: absolute;
+    left: 493px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .FSGF3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .FSGF3:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .G3 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .G3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .G3:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .GSAF3 {
+    position: absolute;
+    left: 518px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .GSAF3:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .GSAF3:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .A4 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .A4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .A4:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .ASBF4 {
+    position: absolute;
+    left: 543px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .ASBF4:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B4 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .B4:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .CSDF4 {
+    position: absolute;
+    left: 593px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .CSDF4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .CSDF4:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .C4 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .C4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .C4:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .D4 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .D4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .D4:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .DSEF4 {
+    position: absolute;
+    left: 618px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .DSEF4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .DSEF4:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .E4 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .E4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .E4:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .F4 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .F4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .F4:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .FSGF4 {
+    position: absolute;
+    left: 668px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .FSGF4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .FSGF4:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .G4 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .G4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .G4:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .GSAF4 {
+    position: absolute;
+    left: 693px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .GSAF4:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .GSAF4:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .A5 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .A5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .A5:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .ASBF5 {
+    position: absolute;
+    left: 718px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .ASBF5:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B5 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .B5:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .C5 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .C5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .C5:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .CSDF5 {
+    position: absolute;
+    left: 768px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .CSDF5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .CSDF5:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .D5 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .D5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .D5:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .DSEF5 {
+    position: absolute;
+    left: 793px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .DSEF5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .DSEF5:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .E5 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .E5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .E5:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .F5 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .F5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .F5:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .FSGF5 {
+    position: absolute;
+    left: 843px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .FSGF5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .FSGF5:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .G5 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .G5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .G5:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .GSAF5 {
+    position: absolute;
+    left: 868px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .GSAF5:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .GSAF5:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .A6 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .A6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .A6:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .ASBF6 {
+    position: absolute;
+    left: 893px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .ASBF6:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B6 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .B6:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .C6 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .C6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .C6:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .CSDF6 {
+    position: absolute;
+    left: 943px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .CSDF6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .CSDF6:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .D6 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .D6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .D6:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .DSEF6 {
+    position: absolute;
+    left: 968px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .DSEF6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .DSEF6:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .E6 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .E6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .E6:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .F6 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .F6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .F6:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
+  .FSGF6 {
+    position: absolute;
+    left: 1018px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .FSGF6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .FSGF6:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .G6 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .G6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .G6:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .GSAF6 {
+    position: absolute;
+    left: 1043px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .GSAF6:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .GSAF6:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .A7 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .A7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .A7:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .ASBF7 {
+    position: absolute;
+    left: 1068px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .ASBF7:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B7 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .B7:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .C7 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .C7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .C7:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .CSDF7 {
+    position: absolute;
+    left: 1118px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .CSDF7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .CSDF7:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .D7 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .D7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .D7:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .DSEF7 {
+    position: absolute;
+    left: 1143px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .DSEF7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .DSEF7:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .E7 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .E7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .E7:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .F7 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .F7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .F7:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .FSGF7 {
+    position: absolute;
+    left: 1193px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .FSGF7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .FSGF7:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .G7 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .G7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .G7:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .GSAF7 {
+    position: absolute;
+    left: 1218px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .GSAF7:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .GSAF7:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .A8 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .A8:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .A8:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .ASBF8 {
+    position: absolute;
+    left: 1243px;
+    background-color: black;
+    height: 80px;
+    width: 15px;
+    border: solid 1px;
+    z-index: 100;
+  }
+  .ASBF8:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .ASBF8:hover {
+    background-color: brown;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .B8 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .B8:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .B8:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
+  .C8 {
+    background-color: oldlace;
+    height: 125px;
+    width: 25px;
+    border: solid 1px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  }
+  .C8:active {
+    background-color: lightgray;  
+    transform: translateY(4px);   
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .C8:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px);
+  }
