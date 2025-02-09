@@ -98,6 +98,16 @@
     border: solid 1px;
     z-index: 100;
   }
+  .CSDF1:active {
+    background-color: lightgray; 
+    transform: translateY(4px);  
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }
+  .CSDF1:hover {
+    background-color: #bbb; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transform: translateY(-1px);
+  }
   .D1 {
     background-color: oldlace;
     height: 125px;
@@ -1730,4 +1740,527 @@
     background-color: #bbb; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     transform: translateY(-1px);
+  }
+  
+  .keys {
+    display: flex;
+    flex-direction: row;
+    font-family: "Goblin One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play{
+    position: relative;
+    left:133px;
+    bottom:41px;
+    z-index: 150;
+  }
+  .play02{
+    position: relative;
+    color: white;
+    left:134px;
+    bottom:87px;
+    z-index: 150;
+  }
+  .play03{
+    position: relative;
+    left:133px;
+    bottom:41px;
+    z-index: 150;
+  }
+  .play04{
+    position: relative;
+    left:143px;
+    bottom:41px;
+  }
+  .play05{
+    position: relative;
+    left:142px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play06{
+    position: relative;
+    left:136px;
+    bottom:41px;
+  }
+  .play07{
+    position: relative;
+    left:132px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play08{
+   position: relative;
+    left:131px;
+    bottom:41px;
+  }
+  .play09{
+   position: relative;
+    left:141px;
+    bottom:41px;
+  }
+  .play10{
+  position: relative;
+    left:139px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play11{
+    position: relative;
+    left:138px;
+    bottom:41px;
+  }
+  .play12{
+    position: relative;
+    left:135px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play13{
+    position: relative;
+    left:134px;
+    bottom:41px;
+  }
+  .play14{
+  position: relative;
+    left:133px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play15{
+  position: relative;
+    left:135px;
+    bottom:41px;
+  }
+  .play16{
+   position: relative;
+    left:147px;
+    bottom:41px;
+  }
+  .play17{
+   position: relative;
+    left:145px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play18{
+    position: relative;
+    left:144px;
+    bottom:41px;
+  }
+  .play19{
+    position: relative;
+    left:144px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play20{
+   position: relative;
+    left:142px;
+    bottom:41px;
+  }
+  .play21{
+    position: relative;
+    left:152px;
+    bottom:41px;
+  }
+  .play22{
+    position: relative;
+    left:150px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play23{
+    position: relative;
+    left:148px;
+    bottom:41px;
+  }
+  .play24{
+    position: relative;
+    left:145px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play25{
+    position: relative;
+    left:143px;
+    bottom:41px;
+  }
+  .play26{
+    position: relative;
+    left:141px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play27{
+    position: relative;
+    left:142px;
+    bottom:41px;
+  }
+  .play28{
+    position: relative;
+    left:150px;
+    bottom:41px;
+  }
+  .play29{
+    position: relative;
+    left:145px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play30{
+    position: relative;
+    left:149px;
+    bottom:41px;
+  }
+  .play31{
+    position: relative;
+    left:148px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play32{
+    position: relative;
+    left:149px;
+    bottom:45px;
+  }
+  .play33{
+    position: relative;
+    left:164px;
+    bottom:40px;
+  }
+  .play34{
+    position: relative;
+    left:162px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play35{
+    position: relative;
+    left:164px;
+    bottom:40px;
+  }
+  .play36{
+    position: relative;
+    left:168px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play37{
+    position: relative;
+    left:170px;
+    bottom:40px;
+  }
+  .play38{
+    position: relative;
+    left:168px;
+    bottom:87px;
+    color: white;
+    z-index: 150;
+  }
+  .play39{
+    position: relative;
+    left:169px;
+    bottom:40px;
+  }
+  .play40{
+    position: relative;
+    left:188px;
+    bottom:40px;
+  }
+  .play41{
+    position: relative;
+    left:191px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play42{
+    position: relative;
+    left:194px;
+    bottom:40px;
+  }
+  .play43{
+    position: relative;
+    left:195px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play44{
+    position: relative;
+    left:192px;
+    bottom:40px;
+  }
+  .play45{
+    position: relative;
+    left:202px;
+    bottom:40px;
+  }
+  .play46{
+    position: relative;
+    left:195px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play47{
+    position: relative;
+    left:189px;
+    bottom:40px;
+  }
+  .play48{
+    position: relative;
+    left:187px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play49{
+    position: relative;
+    left:182px;
+    bottom:40px;
+  }
+  .play50{
+    position: relative;
+    left:180px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play51{
+    position: relative;
+    left:176px;
+    bottom:40px;
+  }
+  .play52{
+    position: relative;
+    left:183px;
+    bottom:40px;
+  }
+  .play53{
+    position: relative;
+    left:180px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play54{
+    position: relative;
+    left:177px;
+    bottom:40px;
+  }
+  .play55{
+    position: relative;
+    left:176px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play56{
+    position: relative;
+    left:173px;
+    bottom:40px;
+  }
+  .play57{
+    position: relative;
+    left:180px;
+    bottom:40px;
+  }
+  .play58{
+    position: relative;
+    left:177px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play59{
+    position: relative;
+    left:173px;
+    bottom:40px;
+  }
+  .play60{
+    position: relative;
+    left:169px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play61{
+    position: relative;
+    left:164px;
+    bottom:40px;
+  }
+  .play62{
+    position: relative;
+    left:166px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play63{
+    position: relative;
+    left:164px;
+    bottom:40px;
+  }
+  .play64{
+    position: relative;
+    left:175px;
+    bottom:40px;
+  }
+  .play65{
+    position: relative;
+    left:174px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play66{
+    position: relative;
+    left:171px;
+    bottom:40px;
+  }
+  .play67{
+    position: relative;
+    left:168px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play68{
+    position: relative;
+    left:166px;
+    bottom:40px;
+  }
+  .play69{
+    position: relative;
+    left:179px;
+    bottom:40px;
+  }
+  .play70{
+    position: relative;
+    left:178px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play71{
+    position: relative;
+    left:172px;
+    bottom:40px;
+  }
+  .play72{
+    position: relative;
+    left:169px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play73{
+    position: relative;
+    left:166px;
+    bottom:40px;
+  }
+  .play74{
+    position: relative;
+    left:166px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play75{
+    position: relative;
+    left:163px;
+    bottom:40px;
+  }
+  .play76{
+    position: relative;
+    left:174px;
+    bottom:40px;
+  }
+  .play77{
+    position: relative;
+    left:181px;
+    bottom:85px;
+    color: white;
+    z-index: 150;
+  }
+  .play78{
+    position: relative;
+    left:186px;
+    bottom:40px;
+  }
+  .play79{
+    position: relative;
+    left:189px;
+    bottom:90px;
+    color: white;
+    z-index: 150;
+  }
+  .play80{
+    position: relative;
+    left:190px;
+    bottom:40px;
+  }
+  .play81{
+    position: relative;
+    left:206px;
+    bottom:40px;
+  }
+  .play82{
+    position: relative;
+    left:213px;
+    bottom:82px;
+    color: white;
+    z-index: 150;
+  }
+  .play83{
+    position: relative;
+    left:217px;
+    bottom:40px;
+  }
+  .play84{
+    position: relative;
+    left:220px;
+    bottom:82px;
+    color: white;
+    z-index: 150;
+  }
+  .play85{
+    position: relative;
+    left:220px;
+    bottom:40px;
+  }
+  .play86{
+    position: relative;
+    left:222px;
+    bottom:80px;
+    color: white;
+    z-index: 150;
+  }
+  .play87{
+    position: relative;
+    left:220px;
+    bottom:40px;
+  }
+  .play88{
+    position: relative;
+    left:240px;
+    bottom:40px;
   }

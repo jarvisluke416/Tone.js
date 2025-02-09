@@ -4,1165 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
     <script src="http://unpkg.com/tone"></script>
- <title>Document</title>
- <style>
-    #play {
-     font-size: 60px;
-    }
- </style>
-</head>
+<title>PLAYABLE 88 KEY SYNTH</title>
+ </head>
 <body>
-
-    
-    <div class="piano">
-        <button class="A1" id="play"></button>
-        <button class="ASBF1" id="play2"></button>
-        <button class="B1" id="play3" ></button>
-        <button class="C1" id="play4" ></button>
-        <button class="CSDF1" id="play5" ></button>
-        <button class="D1" id="play6" ></button>
-        <button class="DSEF1" id="play7" ></button>
-        <button class="E1" id="play8" ></button>
-        <button class="F1" id="play9" ></button>
-        <button class="FSGF1" id="play10" ></button>
-        <button class="G1" id="play11" ></button>
-        <button class="GSAF1" id="play12" ></button>
-        <button class="A2" id="play13" ></button>
-        <button class="ASBF2" id="play14" ></button>
-        <button class="B2" id="play15" ></button>
-        <button class="C2" id="play16" ></button>
-        <button class="CSDF2" id="play17" ></button>
-        <button class="D2" id="play18" ></button>
-        <button class="DSEF2" id="play19" ></button>
-        <button class="E2" id="play20" ></button>
-        <button class="F2" id="play21" ></button>
-        <button class="FSGF2" id="play22" ></button>
-        <button class="G2" id="play23" ></button>
-        <button class="GSAF2" id="play24" ></button>
-        <button class="A3" id="play25" ></button>
-        <button class="ASBF3" id="play26" ></button>
-        <button class="B3" id="play27" ></button>
-        <button class="C3" id="play28" ></button>
-        <button class="CSDF3" id="play29" ></button>
-        <button class="D3" id="play30" ></button>
-        <button class="DSEF3" id="play31" ></button>
-        <button class="E3" id="play32" ></button>
-        <button class="F3" id="play33" ></button>
-        <button class="FSGF3" id="play34" ></button>
-        <button class="G3" id="play35" ></button>
-        <button class="GSAF3" id="play36" ></button>
-        <button class="A4" id="play37" ></button>
-        <button class="ASBF4" id="play38" ></button>
-        <button class="B4" id="play39" ></button>
-        <button class="C4" id="play40" ></button>
-        <button class="CSDF4" id="play41" ></button>
-        <button class="D4" id="play42" ></button>
-        <button class="DSEF4" id="play43" ></button>
-        <button class="E4" id="play44" ></button>
-        <button class="F4" id="play45" ></button>
-        <button class="FSGF4" id="play46" ></button>
-        <button class="G4" id="play47" ></button>
-        <button class="GSAF4" id="play48" ></button>
-        <button class="A5" id="play49" ></button>
-        <button class="ASBF5" id="play50" ></button>
-        <button class="B5" id="play51" ></button>
-        <button class="C5" id="play52" ></button>
-        <button class="CSDF5" id="play53" ></button>
-        <button class="D5" id="play54" ></button>
-        <button class="DSEF5" id="play55" ></button>
-        <button class="E5" id="play56" ></button>
-        <button class="F5" id="play57" ></button>
-        <button class="FSGF5" id="play58" ></button>
-        <button class="G5" id="play59" ></button>
-        <button class="GSAF5" id="play60" ></button>
-        <button class="A6" id="play61" ></button>
-        <button class="ASBF6" id="play62" ></button>
-        <button class="B6" id="play63" ></button>
-        <button class="C6" id="play64" ></button>
-        <button class="CSDF6" id="play65" ></button>
-        <button class="D6" id="play66" ></button>
-        <button class="DSEF6" id="play67" ></button>
-        <button class="E6" id="play68" ></button>
-        <button class="F6" id="play69" ></button>
-        <button class="FSGF6" id="play70" ></button>
-        <button class="G6" id="play71" ></button>
-        <button class="GSAF6" id="play72" ></button>
-        <button class="A7" id="play73" ></button>
-        <button class="ASBF7" id="play74" ></button>
-        <button class="B7" id="play75" ></button>
-        <button class="C7" id="play76" ></button>
-        <button class="CSDF7" id="play77" ></button>
-        <button class="D7" id="play78" ></button>
-        <button class="DSEF7" id="play79" ></button>
-        <button class="E7" id="play80" ></button>
-        <button class="F7" id="play81" ></button>
-        <button class="FSGF7" id="play82" ></button>
-        <button class="G7" id="play83" ></button>
-        <button class="GSAF7" id="play84" ></button>
-        <button class="A8" id="play85" ></button>
-        <button class="ASBF8" id="play86" ></button>
-        <button class="B8" id="play87" ></button>
-        <button class="C8" id="play88" ></button>
+        <div class="piano">
+        <input type="button" class="A1" id="play" >
+        <input type="button" class="ASBF1" id="play2" >
+        <input type="button" class="B1" id="play3" >
+        <input type="button" class="C1" id="play4" >
+        <input type="button" class="CSDF1" id="play5" >
+        <input type="button" class="D1" id="play6" >
+        <input type="button" class="DSEF1" id="play7" >
+        <input type="button" class="E1" id="play8" >
+        <input type="button" class="F1" id="play9" >
+        <input type="button" class="FSGF1" id="play10">
+        <input type="button" class="G1" id="play11" >
+        <input type="button" class="GSAF1" id="play12" >
+        <input type="button" class="A2" id="play13" >
+        <input type="button" class="ASBF2" id="play14" >
+        <input type="button" class="B2" id="play15" >
+        <input type="button" class="C2" id="play16" >
+        <input type="button" class="CSDF2" id="play17" >
+        <input type="button" class="D2" id="play18" >
+        <input type="button" class="DSEF2" id="play19" >
+        <input type="button" class="E2" id="play20" >
+        <input type="button" class="F2" id="play21" >
+        <input type="button" class="FSGF2" id="play22" >
+        <input type="button" class="G2" id="play23" >
+        <input type="button" class="GSAF2" id="play24" >
+        <input type="button" class="A3" id="play25" >
+        <input type="button" class="ASBF3" id="play26" >
+        <input type="button" class="B3" id="play27" >
+        <input type="button" class="C3" id="play28" >
+        <input type="button" class="CSDF3" id="play29" >
+        <input type="button" class="D3" id="play30" >
+        <input type="button" class="DSEF3" id="play31" >
+        <input type="button" class="E3" id="play32" >
+        <input type="button" class="F3" id="play33" >
+        <input type="button" class="FSGF3" id="play34" >
+        <input type="button" class="G3" id="play35" >
+        <input type="button" class="GSAF3" id="play36" >
+        <input type="button" class="A4" id="play37" >
+        <input type="button" class="ASBF4" id="play38" >
+        <input type="button" class="B4" id="play39" >
+        <input type="button" class="C4" id="play40" >
+        <input type="button" class="CSDF4" id="play41" >
+        <input type="button" class="D4" id="play42" >
+        <input type="button" class="DSEF4" id="play43" >
+        <input type="button" class="E4" id="play44" >
+        <input type="button" class="F4" id="play45" >
+        <input type="button" class="FSGF4" id="play46" >
+        <input type="button" class="G4" id="play47" >
+        <input type="button" class="GSAF4" id="play48" >
+        <input type="button" class="A5" id="play49" >
+        <input type="button" class="ASBF5" id="play50" >
+        <input type="button" class="B5" id="play51" >
+        <input type="button" class="C5" id="play52" >
+        <input type="button" class="CSDF5" id="play53" >
+        <input type="button" class="D5" id="play54" >
+        <input type="button" class="DSEF5" id="play55" >
+        <input type="button" class="E5" id="play56" >
+        <input type="button" class="F5" id="play57" >
+        <input type="button" class="FSGF5" id="play58" >
+        <input type="button" class="G5" id="play59" >
+        <input type="button" class="GSAF5" id="play60" >
+        <input type="button" class="A6" id="play61" >
+        <input type="button" class="ASBF6" id="play62" >
+        <input type="button" class="B6" id="play63" >
+        <input type="button" class="C6" id="play64" >
+        <input type="button" class="CSDF6" id="play65" >
+        <input type="button" class="D6" id="play66" >
+        <input type="button" class="DSEF6" id="play67" >
+        <input type="button" class="E6" id="play68" >
+        <input type="button" class="F6" id="play69" >
+        <input type="button" class="FSGF6" id="play70" >
+        <input type="button" class="G6" id="play71" >
+        <input type="button" class="GSAF6" id="play72" >
+        <input type="button" class="A7" id="play73" >
+        <input type="button" class="ASBF7" id="play74" >
+        <input type="button" class="B7" id="play75" >
+        <input type="button" class="C7" id="play76" >
+        <input type="button" class="CSDF7" id="play77" >
+        <input type="button" class="D7" id="play78" >
+        <input type="button" class="DSEF7" id="play79" >
+        <input type="button" class="E7" id="play80" >
+        <input type="button" class="F7" id="play81" >
+        <input type="button" class="FSGF7" id="play82" >
+        <input type="button" class="G7" id="play83" >
+        <input type="button" class="GSAF7" id="play84" >
+        <input type="button" class="A8" id="play85" >
+        <input type="button" class="ASBF8" id="play86" >
+        <input type="button" class="B8" id="play87" >
+        <input type="button" class="C8" id="play88" >
         </div>
-            <script src="tone.js" ></script>
-    <script>
-  document.querySelector('#play').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 27.5; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play2').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 29.14; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play3').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 30.87; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play4').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 32.70; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play5').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 34.65; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play6').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 36.71; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play7').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 38.89; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play8').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 41.20; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play9').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 43.65; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play10').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 46.25; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play11').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 49.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play12').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 51.91; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play13').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 55.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play14').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 58.27; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play15').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 61.74; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play16').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 65.41; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play17').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 69.30; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play18').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 73.42; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play19').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 77.78; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play20').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 82.41; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play21').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 87.31; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play22').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 92.50; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play23').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 98.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play24').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 103.83; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play25').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 110.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play26').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 116.54; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play27').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 123.47; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play28').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 130.81; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play29').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 138.59; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play30').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 146.83; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play31').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 155.56; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play32').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 164.81; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play33').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 174.61; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play34').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 185.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play35').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 196.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play36').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 207.65; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play37').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 220.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play38').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 233.08; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play39').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 246.94; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play40').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 261.63; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play41').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 277.18; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play42').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 293.66; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play43').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 311.13; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play44').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 329.63; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play45').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 349.23; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play46').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 369.99; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play47').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 392.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play48').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 415.30; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play49').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 440.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play50').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 466.16; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play51').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 493.88; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play52').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 523.25; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play53').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 554.37; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play54').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 587.33; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play55').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 622.25; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play56').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 659.26; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play57').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 698.46; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play58').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 739.99; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play59').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 783.99; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play60').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 830.61; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play61').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 880.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play62').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 932.33; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play63').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 987.77; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play64').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1046.50; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play65').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1108.73; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play66').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1174.66; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play67').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1244.51; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play68').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1318.51; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play69').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1396.91; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play70').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1480.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play71').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1567.98; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play72').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1661.22; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play73').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1760.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play74').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1864.66; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play75').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 1975.53; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play76').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 2093.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play77').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 2217.46; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play78').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 2349.32; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play79').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 2489.02; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play80').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 2637.02; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play81').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 2793.83; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play82').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 2960.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play83').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 3135.96; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play84').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 3322.44; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play85').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 3520.00; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play86').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 3729.31; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play87').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 3951.07; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-document.querySelector('#play88').addEventListener('mouseenter', () => {
-  const actx = new (AudioContext || webkitAudioContext)();
-  if (!actx) throw 'Not supported :(';
-  
-  const osc = actx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.value = 4186.01; // Frequency value (change to desired pitch)
-  osc.connect(actx.destination);
-  
-  osc.start();  
-  osc.stop(actx.currentTime + 1); // Stop after 1 second
-});
-</script>
-</body>
+        <div class="keys">
+        <p class="play">1</p>
+        <p class="play02">q</p>
+        <p class="play03">a</p>
+        <p class="play04">z</p>
+        <p class="play05">2</p>
+        <p class="play06">w</p>
+        <p class="play07">s</p>
+        <p class="play08">x</p>
+        <p class="play09">3</p>
+        <p class="play10">e</p>
+        <p class="play11">d</p>
+        <p class="play12">c</p>
+        <p class="play13">4</p>
+        <p class="play14">r</p>
+        <p class="play15">f</p>
+        <p class="play16">v</p>
+        <p class="play17">5</p>
+        <p class="play18">t</p>
+        <p class="play19">g</p>
+        <p class="play20">b</p>
+        <p class="play21">6</p>
+        <p class="play22">y</p>
+        <p class="play23">h</p>
+        <p class="play24">n</p>
+        <p class="play25">7</p>
+        <p class="play26">u</p>
+        <p class="play27">j</p>
+        <p class="play28">m</p>
+        <p class="play29">8</p>
+        <p class="play30">i</p>
+        <p class="play31">k</p>
+        <p class="play32">,</p>
+        <p class="play33">9</p>
+        <p class="play34">o</p>
+        <p class="play35">l</p>
+        <p class="play36">.</p>
+        <p class="play37">0</p>
+        <p class="play38">p</p>
+        <p class="play39">;</p>
+        <p class="play40">/</p>
+        <p class="play41">-</p>
+        <p class="play42">[</p>
+        <p class="play43">Q</p>
+        <p class="play44">A</p>
+        <p class="play45">Z</p>
+        <p class="play46">W</p>
+        <p class="play47">S</p>
+        <p class="play48">X</p>
+        <p class="play49">E</p>
+        <p class="play50">D</p>
+        <p class="play51">C</p>
+        <p class="play52">R</p>
+        <p class="play53">F</p>
+        <p class="play54">V</p>
+        <p class="play55">T</p>
+        <p class="play56">G</p>
+        <p class="play57">B</p>
+        <p class="play58">Y</p>
+        <p class="play59">H</p>
+        <p class="play60">N</p>
+        <p class="play61">U</p>
+        <p class="play62">J</p>
+        <p class="play63">M</p>
+        <p class="play64">I</p>
+        <p class="play65">K</p>
+        <p class="play66">O</p>
+        <p class="play67">L</p>
+        <p class="play68">P</p>
+        <p class="play69">!</p>
+        <p class="play70">@</p>
+        <p class="play71">#</p>
+        <p class="play72">$</p>
+        <p class="play73">%</p>
+        <p class="play74">^</p>
+        <p class="play75">&</p>
+        <p class="play76">*</p>
+        <p class="play77">(</p>
+        <p class="play78">)</p>
+        <p class="play79">_</p>
+        <p class="play80">+</p>
+        <p class="play81"><</p>
+        <p class="play82">></p>
+        <p class="play83">:</p>
+        <p class="play84">?</p>
+        <p class="play85">{</p>
+        <p class="play86">""</p>
+        <p class="play87">}</p>
+        <p class="play88">|</p>
+        </div>
+        <script src="tone.js" ></script>
+       </body>
 </html>
